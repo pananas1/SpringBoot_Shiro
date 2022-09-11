@@ -12,6 +12,7 @@ public class MyRealm extends AuthorizingRealm {
         return null;
     }
 
+    // 用户名admin 密码123456
     // 认证
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {

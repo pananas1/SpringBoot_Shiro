@@ -31,7 +31,7 @@ public class ShiroConfig {
         bean.setUnauthorizedUrl("/white");
         Map<String, String> map = new LinkedHashMap<>();
         // 不需要认证
-        map.put("/doLogin", "anon");
+        map.put("/login", "anon");
         // 需要认证
         map.put("/admin/*", "authc");
         bean.setFilterChainDefinitionMap(map);
